@@ -1,0 +1,29 @@
+[
+    {
+        "name": "slice 1",
+        "fields": [
+            { "label": "الاسم", "type": "text", "required": true },
+            { "label": "الهاتف", "type": "tel", "required": true },
+            { "label": "الوصف", "type": "textarea", "required": false },
+            { "label": "الاسم", "type": "text", "required": true },
+            { "label": "الهاتف", "type": "tel", "required": true },
+            { "label": "الاسم", "type": "text", "required": true },
+            { "label": "الهاتف", "type": "tel", "required": true },
+            { "label": "الاسم", "type": "text", "required": true },
+            { "label": "الهاتف", "type": "tel", "required": true }
+        ]
+    },
+    {
+        "name": "slice 2",
+        "fields": [
+            { "label": "رقم الموظف", "type": "number", "required": true },
+            { "label": "من تاريخ", "type": "date", "required": true },
+            { "label": "إلى تاريخ", "type": "date", "required": true },
+            { "label": "سبب الإجازة", "type": "textarea", "required": false },
+            { "label": "رقم الموظف", "type": "number", "required": true },
+            { "label": "من تاريخ", "type": "date", "required": true },
+            { "label": "إلى تاريخ", "type": "date", "required": true },
+            { "label": "سبب الإجازة", "type": "textarea", "required": false }
+        ]
+    }
+]

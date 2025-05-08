@@ -19,6 +19,10 @@ use App\Http\Controllers\AdminCreateSecondUser;
 use App\Http\Controllers\SecondUserFlowingModelController;
 use App\Http\Controllers\SecondUserShowFlowingModelController;
 use App\Http\Controllers\SecondUserShowModalController;
+use App\Models\Form;
+
+use function Amp\Dns\query;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,6 +33,17 @@ use App\Http\Controllers\SecondUserShowModalController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/forms/{id}',function(string $id){
+    // return $id;
+    // dump($id);
+    $form=Form::where('title',$id)->get();
+    // dump($form);
+    return Inertia::render('ShowForms/index',[
+        'form'=>$form,
+    ]);
+
+    // return $id;
+});
 Route::get('/', function () {
     return Inertia::render('Auth/Login'); 
 });

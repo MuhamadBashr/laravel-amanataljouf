@@ -31,6 +31,7 @@
         "multiselect-react-dropdown": "^2.0.25",
         "primereact": "^10.9.4",
         "react-bootstrap": "^2.10.9",
-        "react-hook-form": "^7.56.0"
+        "react-hook-form": "^7.56.0",
+        "react-svg": "^16.3.0"
     }
 }

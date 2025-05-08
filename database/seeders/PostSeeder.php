@@ -15,10 +15,10 @@ class PostSeeder extends Seeder
      */
     public function run()
     {
-        Post::factory()->count(10)->for(User::create([
-            'name'=>'Admin',
-            'email'=>'admin@admin.com',
-            'password'=>bcrypt('password')
-        ]))->create();
+        // Post::factory()->count(10)->for(User::create([
+        //     'name'=>'Admin',
+        //     'email'=>'admin@admin.com',
+        //     'password'=>bcrypt('password')
+        // ]))->create();
     }
 }

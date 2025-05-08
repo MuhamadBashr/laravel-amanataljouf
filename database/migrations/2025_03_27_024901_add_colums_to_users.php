@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->json("model")->default(new Expression('(JSON_ARRAY())'));
+            // $table->json("model")->default(new Expression('(JSON_ARRAY())'));
             $table->boolean("escalation")->default(true);
             $table->boolean("gender")->default(true);
             $table->string("Job")->default("jjj");

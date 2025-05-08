@@ -13,9 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('agency', function (Blueprint $table) {
+        Schema::table('forms', function (Blueprint $table) {
             //
-             Schema::rename('agency', 'department');  
+            $table->dropColumn("contact");
+            $table->string('name');
+            $table->date("Strat_History");
+            $table->date("End_History");
+            $table->json("Filed_Forms");
         });
     }
 
@@ -26,7 +30,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('agency', function (Blueprint $table) {
+        Schema::table('forms', function (Blueprint $table) {
             //
         });
     }
